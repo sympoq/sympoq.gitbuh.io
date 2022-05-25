@@ -29,7 +29,7 @@ if (window.jQuery === undefined || window.jQuery.fn.jquery !== '3.6.0')
 else 
 {
     jQuery = window.jQuery;
-	loadModalJS("https://www.sympoq.com/widget/modal-nf.js", true);
+	loadModalJS("https://sympoq.github.io/widget/modal-nf.js", true);
     main();
 }
 
@@ -37,7 +37,7 @@ else
 function scriptLoadHandler() 
 {
     jQuery = window.jQuery; 
-	loadModalJS("https://www.sympoq.com/widget/modal-nf.js", true);
+	loadModalJS("https://sympoq.github.io/widget/modal-nf.js", true);
     main(); 
 }
 
@@ -57,13 +57,13 @@ function main()
         var css_link2 = $("<link>", { 
             rel: "stylesheet", 
             type: "text/css", 
-            href: "https://www.sympoq.com/widget/icons.css" 
+            href: "https://sympoq.github.io/widget/icons.css" 
         });
         css_link2.appendTo('head');          
         var css_link = $("<link>", { 
             rel: "stylesheet", 
             type: "text/css", 
-            href: "https://www.sympoq.com/widget/widget.css" 
+            href: "https://sympoq.github.io/widget/widget.css" 
         });
         css_link.appendTo('head');    
         
