@@ -14,9 +14,9 @@ function loadModalJS(FILE_URL,async=false){let scriptEle=document.createElement(
 function main()
 {jQuery(document).ready(function($)
 {var css_link2=$("<link>",{rel:"stylesheet",type:"text/css",href:"https://sympoq.github.io/widget/icons.min.css"});css_link2.appendTo('head');var css_link=$("<link>",{rel:"stylesheet",type:"text/css",href:"https://sympoq.github.io/widget/widget.min.css"});css_link.appendTo('head');var site=widget[0];var icon=widget[1];var color=widget[2];var position=widget[3];var buttonContent='<div class="s--button-container" style="bottom:var('+position+')">'
-+'<a rel="nofollow" href="https://'+site+'.sympoq.com/app/f?p=widget:view" onclick="$(this).modal({width:350, height:570}).open(); return false;">'
-+' <div class="s--button" style="background:'+color+';">'
-+'  <div class="svg '+icon+'"></div>'
++'	<div class="s--link">'
++'  <div class="s--button" style="background:'+color+';">'
++'   <div class="svg '+icon+'"></div>'
++'  </div>'
 +' </div>'
-+'</a>'
-+'</div>';$(document.body).append(buttonContent);});}})();
++'</div>';$(document.body).append(buttonContent);$(".s--link").click(function(){var newUrl='https://'+site+'.sympoq.com/app/f?p=widget:view';$(this).attr("href",newUrl);$(this).modal({width:350,height:550}).open();return false;});});}})();
